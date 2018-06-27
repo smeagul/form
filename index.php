@@ -20,9 +20,9 @@
    <td>
    <select name="sendername">
     <option value="">----</option>
-    <option value="Yonemura">Yonemura</option>
-    <option value="Araki">Araki</option>
-    <option value="Asai">Asai</option>
+    <option value="name1">name1</option>
+    <option value="name2">name2</option>
+    <option value="name3">name4</option>
     <!--option value="Ocampo">Ocampo</option-->
    </select>
    </td>
@@ -34,18 +34,18 @@
    <td>
     <select name="category">
     <option value="">----</option>
-    <option value="チーム">チーム</option>
-    <option value="ファーム">ファーム</option>
-    <option value="グッズ">グッズ</option>
-    <option value="チケット">チケット</option>
-    <option value="イベント">イベント</option>
-    <option value="CREW">CREW</option>
-    <option value="メディア">メディア</option>
+    <option value="cat01">cat01</option>
+    <option value="cat02">cat03</option>
+    <option value="cat03">cat04</option>
+    <option value="cat05">cat05</option>
+    <option value="cat06">cat06</option>
+    <option value="cat07">cat07</option>
+    <option value="cat08">cat08</option>
    </select>
    </td>
   </tr>
   <tr>
-   <td class="fs14">トピックスタイトル（公開されるトピックスページのタイトルになります） </td>
+   <td class="fs14">Title</td>
   </tr>
   <tr>
    <td>
@@ -53,7 +53,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">サンプルページURL（参考にするページがあれば入力） </td>
+   <td class="fs14">test url </td>
   </tr>
   <tr>
    <td>
@@ -61,7 +61,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">ページ公開日時</td>
+   <td class="fs14">Date</td>
   </tr>
   <tr>
    <td class="dates">
@@ -78,7 +78,7 @@
          <option value="2024">2024</option>
         </select>
      </dt>
-     <dd class="fl"><label for="年">年</label></dd>
+     <dd class="fl"><label for="yr">yr</label></dd>
      <dt class="fl">
       	<select name="month">
          <option value="">--</option>
@@ -96,7 +96,7 @@
          <option value="12">12</option>
         </select>
      </dt>
-     <dd class="fl"><label for="月">月</label></dd>
+     <dd class="fl"><label for="mon">mon/label></dd>
      <dt class="fl">
          <select name="day">
          <option value="">--<!--?php //echo date("d"); ?--></option>
@@ -133,7 +133,7 @@
          <option value="31">31</option>
         </select>
      </dt>
-     <dd class="fl"><label for="日">日</label></dd>
+     <dd class="fl"><label for="day">day</label></dd>
      <dt class="fr">
      <?php 
 	 //Get server time
@@ -215,7 +215,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">依頼内容</td>
+   <td class="fs14">Description</td>
   </tr>
   <tr>
    <td>
@@ -223,7 +223,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">ファイル添付</td>
+   <td class="fs14">upload</td>
   </tr>
   <tr>
    <td>
