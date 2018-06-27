@@ -45,9 +45,9 @@
 ?>  
    <select name="sendername">
     <option value="">----</option>
-    <option value="Yonemura"<?= ($selected_sender == "Yonemura") ? "selected='selected'" : "" ?>>Yonemura</option>
-    <option value="Araki"<?= ($selected_sender == "Araki") ? "selected='selected'" : "" ?>>Araki</option>
-    <option value="Asai" <?= ($selected_sender == "Asai") ? "selected='selected'" : "" ?>>Asai</option>
+    <option value="name1"<?= ($selected_sender == "name1") ? "selected='selected'" : "" ?>>name1</option>
+    <option value="name2"<?= ($selected_sender == "Araki") ? "selected='selected'" : "" ?>>name2</option>
+    <option value="name3" <?= ($selected_sender == "Asai") ? "selected='selected'" : "" ?>>name3</option>
    </select>
    <div class="red"><?= (isset($_SESSION['errors']['sendername'])) ? $_SESSION['errors']['sendername']."<br/>" : ""  ?></div>
    </td>
@@ -65,13 +65,13 @@
 ?> 
     <select name="category">
     <option value="">----</option>
-    <option value="cat1 <?= ($selected_cat == "cat1") ? "selected='selected'" : "" ?>>cat1</option>
-    <option value="cat2" <?= ($selected_cat == "cat2") ? "selected='selected'" : "" ?>>cat2</option>
-    <option value="cat3" <?= ($selected_cat == "cat3") ? "selected='selected'" : "" ?>>cat3</option>
-    <option value="cat4" <?= ($selected_cat == "cat4") ? "selected='selected'" : "" ?>>cat4</option>
-    <option value="cat5" <?= ($selected_cat == "cat5") ? "selected='selected'" : "" ?>>cat5</option>
-    <option value="cat6" <?= ($selected_cat == "cat6") ? "selected='selected'" : "" ?>>cat6</option>
-    <option value="cat7"  <?= ($selected_cat == "cat7") ? "selected='selected'" : "" ?> >cat7</option>
+    <option value="cat01 <?= ($selected_cat == "cat01") ? "selected='selected'" : "" ?>>cat01</option>
+    <option value="cat02" <?= ($selected_cat == "cat02") ? "selected='selected'" : "" ?>>cat02</option>
+    <option value="cat03" <?= ($selected_cat == "cat03") ? "selected='selected'" : "" ?>>cat03</option>
+    <option value="cat04" <?= ($selected_cat == "cat04") ? "selected='selected'" : "" ?>>cat04</option>
+    <option value="cat05" <?= ($selected_cat == "cat05") ? "selected='selected'" : "" ?>>cat05</option>
+    <option value="cat06" <?= ($selected_cat == "cat06") ? "selected='selected'" : "" ?>>cat06</option>
+    <option value="cat07"  <?= ($selected_cat == "cat07") ? "selected='selected'" : "" ?> >cat07</option>
    </select>
    <div class="red"><?= (isset($_SESSION['errors']['category'])) ? $_SESSION['errors']['category']."<br/>" : ""  ?></div>
    </td>
