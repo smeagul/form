@@ -32,7 +32,7 @@
  <form action="sendtopic.php" method="post" enctype="multipart/form-data">
  <table>
   <tr>
-   <td class="fs14">送信者</td>
+   <td class="fs14">Sender</td>
   </tr>
   <tr>
    <td class="fs14">
@@ -53,7 +53,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">トピックスカテゴリ </td>
+   <td class="fs14">Category</td>
   </tr>
   <tr>
    <td>
@@ -65,19 +65,19 @@
 ?> 
     <select name="category">
     <option value="">----</option>
-    <option value="チーム" <?= ($selected_cat == "チーム") ? "selected='selected'" : "" ?>>チーム</option>
-    <option value="ファーム" <?= ($selected_cat == "ファーム") ? "selected='selected'" : "" ?>>ファーム</option>
-    <option value="グッズ" <?= ($selected_cat == "グッズ") ? "selected='selected'" : "" ?>>グッズ</option>
-    <option value="チケット" <?= ($selected_cat == "チケット") ? "selected='selected'" : "" ?>>チケット</option>
-    <option value="イベント" <?= ($selected_cat == "イベント") ? "selected='selected'" : "" ?>>イベント</option>
-    <option value="CREW" <?= ($selected_cat == "CREW") ? "selected='selected'" : "" ?>>CREW</option>
-    <option value="メディア"  <?= ($selected_cat == "メディア") ? "selected='selected'" : "" ?> >メディア</option>
+    <option value="cat1 <?= ($selected_cat == "cat1") ? "selected='selected'" : "" ?>>cat1</option>
+    <option value="cat2" <?= ($selected_cat == "cat2") ? "selected='selected'" : "" ?>>cat2</option>
+    <option value="cat3" <?= ($selected_cat == "cat3") ? "selected='selected'" : "" ?>>cat3</option>
+    <option value="cat4" <?= ($selected_cat == "cat4") ? "selected='selected'" : "" ?>>cat4</option>
+    <option value="cat5" <?= ($selected_cat == "cat5") ? "selected='selected'" : "" ?>>cat5</option>
+    <option value="cat6" <?= ($selected_cat == "cat6") ? "selected='selected'" : "" ?>>cat6</option>
+    <option value="cat7"  <?= ($selected_cat == "cat7") ? "selected='selected'" : "" ?> >cat7</option>
    </select>
    <div class="red"><?= (isset($_SESSION['errors']['category'])) ? $_SESSION['errors']['category']."<br/>" : ""  ?></div>
    </td>
   </tr>
   <tr>
-   <td class="fs14">トピックスタイトル（公開されるトピックスページのタイトルになります） </td>
+   <td class="fs14">Title </td>
   </tr>
   <tr>
    <td>
@@ -86,7 +86,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">サンプルページURL（参考にするページがあれば入力）</td>
+   <td class="fs14">test url</td>
   </tr>
   <tr>
    <td>
@@ -94,7 +94,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">ページ公開日時</td>
+   <td class="fs14">date</td>
   </tr>
   <tr>
    <td class="dates">
@@ -111,7 +111,7 @@
          <option value="2024">2024</option>
         </select>
      </dt>
-     <dd class="fl"><label for="年">年</label></dd>
+     <dd class="fl"><label for="yr">yr</label></dd>
      <dt class="fl">
       	<select name="month">
          <option value="">--</option>
@@ -129,7 +129,7 @@
          <option value="12">12</option>
         </select>
      </dt>
-     <dd class="fl"><label for="月">月</label></dd>
+     <dd class="fl"><label for="mon">mon</label></dd>
      <dt class="fl">
          <select name="day">
          <option value="">--</option>
@@ -166,7 +166,7 @@
          <option value="31">31</option>
         </select>
      </dt>
-     <dd class="fl"><label for="日">日</label></dd>
+     <dd class="fl"><label for="dat">day</label></dd>
      <dt class="fr">
       <?php //code to get server time
 	/* function get_times( $default = 'H:i', $interval = '+30 minutes' ) {
@@ -247,7 +247,7 @@
    </td>
   </tr>
   <tr>
-   <td class="fs14">依頼内容</td>
+   <td class="fs14">description</td>
   </tr>
   <tr>
    <td>
