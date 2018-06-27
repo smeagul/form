@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swallows form</title>
+
+<style>
+.swform{
+ margin: 0 auto;
+ width: 500px;
+ padding:20px; 0px;
+ border:1px solid #666666;
+}
+
+.swform table tr td{
+padding:5px 0px;
+margin:5px 0px;
+}
+.swform table select, .swform table input{
+width:100%;
+padding:5px;
+ }
+.swform table select option{
+min-height:inherit;	
+padding:0px;
+}
+.swform table td.date select{
+width:20%;
+margin:0px 5px 0px 0px;
+}
+.left{text-align:left;}
+.right{text-align:right;}
+.center{text-align:center;}
+.w100{width:100px!important;}
+</style>
+
+</head>
+
+<body>
+<h1 class="center">Swallows topics form</h1>
+<div class="swform">
+ 
+ <form action="sendtopic.php" method="get">
+ <table>
+  <tr>
+   <td>Sender name</td>
+  </tr>
+  <tr>
+   <td>
+   <select name="sendername">
+    <option value="">----</option>
+    <option value="Yonemura">Yonemura</option>
+    <option value="Araki">Araki</option>
+    <option value="Asai">Asai</option>
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>Category</td>
+  </tr>
+  <tr>
+   <td>
+    <select name="category">
+    <option value="">----</option>
+    <option value="チーム">チーム</option>
+    <option value="ファーム">ファーム</option>
+    <option value="グッズ">グッズ</option>
+    <option value="チケット">チケット</option>
+    <option value="イベント">イベント</option>
+    <option value="CREW">CREW</option>
+    <option value="メディア">メディア</option>
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>Topics Title</td>
+  </tr>
+  <tr>
+   <td>
+    <input name="" type="text" />
+   </td>
+  </tr>
+  <tr>
+   <td>Sample Page URL</td>
+  </tr>
+  <tr>
+   <td>
+    <input name="" type="text" />
+   </td>
+  </tr>
+  <tr>
+   <td>Release date</td>
+  </tr>
+  <tr>
+   <td class="date">
+    <select name="yr">
+     <option value="">----</option>
+     <option value="">2018</option>
+    </select><label for="年">年</label>
+    <select name="month">
+     <option value="">----</option>
+     <option value="">01</option>
+    </select><label for="月">月</label>
+    <select name="day">
+     <option value="">----</option>
+     <option value="">01</option>
+    </select><label for="日">日</label>
+   </td>
+  </tr>
+  <tr>
+   <td>依頼内容</td>
+  </tr>
+  <tr>
+   <td>
+    <textarea name="" cols="20" rows="5"></textarea>
+   </td>
+  </tr>
+  <tr>
+   <td>Upload files</td>
+  </tr>
+  <tr>
+   <td>
+    <input type="file" name="Upload" id="Upload" >
+   </td>
+  </tr>
+  <tr>
+   <td class="right">
+     <input type="button" value="send" class="w100" />
+   </td>
+  </tr>
+ 
+ </table>
+ </form>
+</div>
+
+
+</body>
+</html>

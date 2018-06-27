@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="mongid.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+
+<form method='post' enctype='multipart/form-data' action=''>
+	<div class='file_upload' id='f1'><input name='file[]' type='file'/>1</div>
+	<div id='file_tools'>
+		<img src='images/file_add.png' id='add_file' title='Add new input'/>
+		<img src='images/file_del.png' id='del_file' title='Delete'/>
+	</div>
+	<input type='submit' name='upload' value='Upload'/>
+</form>
+
+<script type='text/javascript'>
+$(document).ready(function(){
+	var counter = 2;
+	$('#del_file').hide();
+	$('img#add_file').click(function(){
+		$('#file_tools').before('<div class="file_upload" id="f'+counter+'"><input name="file[]" type="file">'+counter+'</div>');
+		$('#del_file').fadeIn(0);
+	counter++;
+	});
+	$('img#del_file').click(function(){
+		if(counter==3){
+			$('#del_file').hide();
+		}   
+		counter--;
+		$('#f'+counter).remove();
+	});
+});
+</script>
+
+</body>
+</html>

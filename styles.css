@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+*.{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+p{
+padding:0px;
+margin:0px;
+}
+.swform{
+ margin: 0 auto;
+ width: 500px;
+ padding:20px 20px;
+ border:1px solid #666666;
+}
+.swform table{
+width:100%;
+}
+.swform table tr td{
+padding:5px 0px;
+margin:5px 0px;
+}
+.swform table select, .swform table input{
+width:100%;
+padding:5px;
+ }
+.swform table select option{
+min-height:inherit;	
+padding:0px;
+}
+.swform table td.dates select{
+width:100%;
+margin:0px 5px 0px 0px;
+}
+.swform table td.dates dl dd{
+margin-left:5px;
+margin-right:20px;
+padding:5px;
+}
+
+.left{text-align:left;}
+.right{text-align:right;}
+.center{text-align:center;}
+.fl{float:left;}
+.fr{float:right;}
+
+.pl20{padding-left:20px!important;}
+
+.w100{width:100px!important;}
+.w100p{widt:100%;}
+.red{color:#ff0000;}
+.fs14{font-size:14px;}
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+.clearfix{
+clear:both;
+}
+.clearfix:after{
+clear:both;
+content:"";
+visibility:hidden;
+display:block;
+height:0;
+}
