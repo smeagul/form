@@ -14,7 +14,7 @@
  <form action="sendtopic.php" method="post" enctype="multipart/form-data">
  <table>
   <tr>
-   <td class="fs14">送信者</td>
+   <td class="fs14">Sender</td>
   </tr>
   <tr>
    <td>
